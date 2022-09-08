@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Checkout from "./routes/Checkout-Page/checkout.component";
 import Home from "./routes/Home/home.component";
 import Navbar from "./routes/Navbar/Navbar";
 import Shop from "./routes/Shop/shop.component";
@@ -14,6 +15,7 @@ function App() {
       <Route index element ={<Home/>}/>
       <Route path="/shop" element={<Shop/>}/>
       <Route path="/sign-in-page" element={<SignInPage/>}/>
+      <Route path="/checkout" element={<Checkout/>}/>
       </Route>
       </Routes>
     );
