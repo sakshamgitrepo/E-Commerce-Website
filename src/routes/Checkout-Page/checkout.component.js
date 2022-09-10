@@ -31,7 +31,7 @@ const Checkout = () => {
     
         );
       })}
-      <span className="total">Total : ${cartTotal}</span>
+      <span className="total">Total : ₹{cartTotal}</span>
     </div>
   );
 };
