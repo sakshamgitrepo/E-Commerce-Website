@@ -15,6 +15,7 @@ const CategoryPreview = ({ title, products }) => {
             <ProductCard key={product.id} product={product} />
           ))}
       </div>
+      <Link className="category-LowerTitlelink" to={title}>Explore...</Link>
     </div>
   );
 };

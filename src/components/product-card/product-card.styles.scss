@@ -5,6 +5,9 @@
     height: 350px;
     align-items: center;
     position: relative;
+    margin-bottom: 1.2rem;
+
+    
   
     img {
       width: 100%;
@@ -32,13 +35,15 @@
       }
     }
   
+   
+    }
     .footer {
-      width: 100%;
+      width: 90%;
       height: 5%;
       display: flex;
       justify-content: space-between;
       font-size: 18px;
-  
+ 
       .name {
         width: 90%;
         margin-bottom: 15px;
@@ -48,5 +53,5 @@
         width: 10%;
       }
     }
-  }
+  
   

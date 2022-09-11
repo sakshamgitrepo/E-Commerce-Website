@@ -1,8 +1,9 @@
-import { NavLink } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import './directory-item.styles.scss'
 
 const DirectoryItem =({category})=>{
     const {imageUrl,title} = category;
+    const navigate = useNavigate();
 return(
     <div className="directory-item-container">
     <div
@@ -11,9 +12,9 @@ return(
         backgroundImage: `url(${imageUrl})`,
       }}
     />
-    <div className="directory-body-container">
-      <h2 style={{marginBottom : '.7rem'}}>{title.toUpperCase()}</h2>
-      <NavLink to={`/shop/${title}`} style ={{fontWeight:'bold'}}>Shop Now</NavLink>
+    <div className="directory-body-container" onClick={()=>navigate(`/shop/${title}`)}>
+      <h2>{title.toUpperCase()}</h2>
+      <p>Shop Now</p>
       
     </div>
   </div>

@@ -9,6 +9,11 @@
       height: 100%;
       width: 70px;
       padding: 25px;
+     
+      @media screen and (max-width:700px){
+      width: 50px;
+      padding: 0;
+      }
     }
   
     .nav-links-container {
@@ -22,6 +27,18 @@
         padding: 10px 15px;
         cursor: pointer;
       }
+
+      @media screen and (max-width:700px){
+        width:67%;
+        justify-content: space-between
+      }
+ 
+    }
+
+    @media screen and (max-width:700px){
+      height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
     }
   }
   
