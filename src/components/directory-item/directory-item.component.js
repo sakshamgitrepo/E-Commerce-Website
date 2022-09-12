@@ -2,8 +2,10 @@ import {  useNavigate } from 'react-router-dom';
 import './directory-item.styles.scss'
 
 const DirectoryItem =({category})=>{
-    const {imageUrl,title} = category;
+    const {imageUrl,title, route} = category;
     const navigate = useNavigate();
+
+   const onNavigateHandler =()=> navigate(route);
 return(
     <div className="directory-item-container">
     <div
@@ -12,7 +14,7 @@ return(
         backgroundImage: `url(${imageUrl})`,
       }}
     />
-    <div className="directory-body-container" onClick={()=>navigate(`/shop/${title}`)}>
+    <div className="directory-body-container" onClick={onNavigateHandler}>
       <h2>{title.toUpperCase()}</h2>
       <p>Shop Now</p>
       
