@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Checkout from "./routes/Checkout-Page/checkout.component";
-import Home from "./routes/Home/home.component";
+import Home from "./routes/home/home.component";
 import Navbar from "./routes/Navbar/Navbar";
 import Shop from "./routes/Shop/shop.component";
-import SignInPage from "./routes/Sign-in-page/sign-in-page.component";
+import SignInPage from "./routes/sign-in-page/sign-in-page.component";
 
 
 
