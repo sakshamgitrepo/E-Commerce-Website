@@ -15,13 +15,17 @@
       width: 100%;
       padding: 10px 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       border-bottom: 1px solid darkgrey;
 
   
       .header-block {
         text-transform: capitalize;
-        width: 23%;
+        margin-right: auto;
+        margin-left: 15px;
+        @media screen  and (max-width:550px){
+          margin-left: 0px; 
+        }
   
         &:last-child {
           width: 8%;
