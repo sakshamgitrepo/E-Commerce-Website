@@ -13,5 +13,17 @@ This is full stack clothing app made with react for frontend and firebase for ba
 # CheckOut Page
 ![image](https://user-images.githubusercontent.com/106506484/196291727-f3592b31-e70a-4272-9416-dc78aa59d526.png)
 
+Technologies
+------------
+
+Front-End : 
+HTML5
+CSS3
+Sass
+React.js
+
+Back-End : 
+Firebase
+Firestore
 
 
