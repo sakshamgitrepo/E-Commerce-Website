@@ -11,6 +11,7 @@ This is full stack clothing app made with react for frontend and firebase for ba
 ![image](https://user-images.githubusercontent.com/106506484/196291120-bb533505-0b17-4fe6-84bb-51f846c50e4b.png)
 
 # CheckOut Page
-![image](https://user-images.githubusercontent.com/106506484/196291470-896e01f6-5a01-4fc7-a562-184c660375b1.png)
+![image](https://user-images.githubusercontent.com/106506484/196291727-f3592b31-e70a-4272-9416-dc78aa59d526.png)
+
 
 
