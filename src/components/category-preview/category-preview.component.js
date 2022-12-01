@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../contexts/user.context";
 import ProductCard from "../product-card/product-card.component";
 import "./category-preview.styles.scss";
 
 const CategoryPreview = ({ title, products }) => {
+  const { currentUser } = useContext(UserContext);
+  console.log(currentUser);
   return (
     <div className="category-preview-container">
       <h2>
@@ -15,7 +19,9 @@ const CategoryPreview = ({ title, products }) => {
             <ProductCard key={product.id} product={product} />
           ))}
       </div>
-      <Link className="category-LowerTitlelink" to={title}>Explore...</Link>
+      {currentUser?
+      <Link className="category-LowerTitlelink" to={title}>Explore...</Link>:
+      <Link className="category-LowerTitlelink" to="/sign-in-page">Explore...</Link>}
     </div>
   );
 };

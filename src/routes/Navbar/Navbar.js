@@ -29,7 +29,9 @@ function Navbar() {
           {currentUser ? (
             <span className="nav-link" onClick={signOutHandler}>
               SIGN OUT
-              <span className="userProfile">Welcome, {currentUser.displayName}</span>
+              <span className="userProfile">
+                Welcome, {currentUser.displayName}
+              </span>
             </span>
           ) : (
             <Link className="nav-link" to="/sign-in-page">
