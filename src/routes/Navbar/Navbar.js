@@ -24,18 +24,18 @@ function Navbar() {
         </Link>
         <div className="nav-links-container">
           <Link className="nav-link" to="/shop">
-            SHOP
+           <b> SHOP </b>
           </Link>
           {currentUser ? (
             <span className="nav-link" onClick={signOutHandler}>
-              SIGN OUT
+             <b> SIGN OUT</b>
               <span className="userProfile">
                 Welcome, {currentUser.displayName}
               </span>
             </span>
           ) : (
             <Link className="nav-link" to="/sign-in-page">
-              SIGN IN
+             <b>SIGN IN</b>
             </Link>
           )}
           <CartIcon />

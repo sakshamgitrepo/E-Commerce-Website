@@ -1,15 +1,12 @@
-import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { UserContext } from "../../contexts/user.context";
 import "./directory-item.styles.scss";
 
 const DirectoryItem = ({ category }) => {
   const { imageUrl, title, route } = category;
   const navigate = useNavigate();
-  const { currentUser } = useContext(UserContext);
 
   const onNavigateHandler = () => {
-   {currentUser ? navigate(route):navigate("/sign-in-page")}
+   navigate(route)
   };
   return (
     <div className="directory-item-container">
